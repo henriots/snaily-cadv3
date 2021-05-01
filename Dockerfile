@@ -6,7 +6,7 @@ COPY . /build
 
 WORKDIR /build
 
-RUN npm run build
+RUN npm install && npm run docker-build
 
 #
 

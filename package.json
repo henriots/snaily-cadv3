@@ -8,6 +8,7 @@
     "dev": "nodemon",
     "build": "next build && tsc --project tsconfig.server.json",
     "auto-install": "node ./scripts/install.js",
+    "docker-build": "npm run translation:generate && npm run build",
     "docker-start": "cross-env NODE_ENV=production node dist/server.js",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
