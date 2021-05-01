@@ -6,6 +6,7 @@ COPY . /build
 
 WORKDIR /build
 
+RUN mv src/config.example.ts src/config.ts
 RUN npm install && npm run docker-build
 
 #
